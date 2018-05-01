@@ -6,7 +6,6 @@ if ! pidof Xorg &>/dev/null; then
 		case $yn in
 			Yes ) 
 				if groups $USER | grep &>/dev/null '\input\b'; then
-					echo "User has input group"
 					startx
 				else
 					echo "User does not have input permissions, refusing to start GUI"
