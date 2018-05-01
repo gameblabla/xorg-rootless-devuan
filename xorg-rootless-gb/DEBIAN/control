@@ -1,0 +1,13 @@
+Package: xorg-rootless-gb
+Version: 0.1
+Architecture: all
+Essential: no
+Section: system
+Priority: optional
+Depends: eudev, xserver-xorg-input-libinput, xserver-xorg-core, xinit, sysvinit-utils
+Conflicts: wdm, gdm, xdm, sddm, nodm
+Maintainer: Gameblabla
+Installed-Size: 408
+Description: Allow you to run Xorg without root rights. 
+ Comes with a prompt menu that starts after you log in to the console.
+ The program checks if you are part of the Input group.
